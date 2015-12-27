@@ -1,5 +1,5 @@
 
-	
+
 	// Activate on ready
 	$(function() {
 		$.getScript("//www.parsecdn.com/js/parse-1.6.12.min.js");
@@ -9,7 +9,7 @@
 
 		 	Parse.initialize("83ESnsf1KPjYEvQOvqS3w9JMTsEa44B2OKxIGZzm", "C2LCT13jgb6hPq2AVk04t5zdPx5Cxb4ablOrkdZD");
 
-		 	var userData = 
+		 	var userData =
 		 	$( ".userData" ).map(function() {
 				return $( this ).val();
 			}).get();
@@ -17,7 +17,7 @@
 			// alert entire userdata array
 			alert(userData);
 
-			// create a variable for each 
+			// create a variable for each
 		 	var email = userData[0];
 		 	var userName = userData[1];
 		 	var userMessage = userData[2];
@@ -27,10 +27,10 @@
 		 	var joinDevTeam = $('#checkCode').prop('checked');
 
 		 	// create parse object
-	        var ParseObj = Parse.Object.extend('testUserData'); 
+	        var ParseObj = Parse.Object.extend('testUserData');
 	        var user = new ParseObj();
 
-	        // instantiate user data 
+	        // instantiate user data
 	        user.set("email", email);
 	        user.set("userName", userName);
 	        user.set("userMessage", userMessage);
@@ -43,5 +43,3 @@
 	  			alert("Succesfully submitted!");
 			});
 	    }
-
-	
