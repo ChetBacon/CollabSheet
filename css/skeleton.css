@@ -10,6 +10,7 @@
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
+- Custom styling
 - Grid
 - Base Styles
 - Typography
@@ -26,8 +27,58 @@
 */
 
 
+/* Custom Styling
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+#header{
+  margin-top: 6rem;
+  text-align: center;
+
+}
+
+.title{
+  margin-bottom: 0rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0em;
+
+}
+
+.subtitle{
+    color:#898989;
+}
+
+#introduction{
+  margin-top: 14rem;
+  padding-top: 6%;
+  text-align: left;
+  background-color: #f1f1f1;
+}
+
+.container{
+  text-align: justify;
+}
+
+@media(min-width: 550px) {
+  #header{
+    margin-top: 18rem;
+    font-size: 2em;
+  }
+  .title{
+    letter-spacing: 1.55em;
+  }
+
+  #introduction{
+    margin-top: 27rem;
+    padding-top: 5%;
+
+  }
+
+}
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 .container {
   position: relative;
   width: 100%;
