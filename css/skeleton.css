@@ -30,11 +30,37 @@
 /* Custom Styling
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+p {
+  text-align: justify;
+}
+
+#intro-text{
+  text-align: center;
+}
+
+
+.arrow {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  left: 0%;
+  bottom: 0%;
+}
+
+.arrow-image {
+  width: 4%;
+  padding: 0% 0% 0% 48%;
+}
+
+
+h1 {
+  text-align: center;
+}
 
 #header{
-  margin-top: 6rem;
+  margin-top: 30%;
   text-align: center;
-
+  font-size: 2em;
 }
 
 .title{
@@ -42,11 +68,10 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0em;
-
 }
 
 .subtitle{
-    color:#898989;
+    color: black;
 }
 
 .content{
@@ -60,13 +85,53 @@
   text-align: justify;
 }
 
-@media(min-width: 550px) {
+.idea > img { width: 50%; margin-left: 25%;}
+.idea > p  { text-align: center;}
+
+.title{
+  margin-bottom: 0rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0em;
+  text-shadow: 2.5px 2px black , 0.5px 0.5px black , -1px -1px black, 2.5px 2.5px black;
+  color: white;
+  font-size: 1.6em;
+}
+
+.mark {
+  background-color: none;
+  font-variant: small-caps;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  text-decoration: underline;
+}
+
+@media(min-width: 800px) {
   #header{
-    margin-top: 18rem;
+    margin-top: 15rem;
     font-size: 2em;
   }
+
+  .subtitle {
+    font-size: .5em;
+  }
+  .mark {
+    background-color: none;
+    font-variant: small-caps;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 0.1em;
+    text-decoration: underline;
+  }
   .title{
-    letter-spacing: 1.55em;
+    margin-bottom: 0rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0em;
+    text-shadow: 5px 4px black , 1px 1px black , -2px -2px black, 5px 5px black;
+    color: white;
+    font-size: 6em;
   }
 
   .content{
@@ -74,10 +139,9 @@
     padding-top: 5%;
     text-align: center;
     font-size: 1.5em;
-
-
-
   }
+
+  .idea > img { width:20%; margin-left: 40%;}
 
 }
 /* Grid
