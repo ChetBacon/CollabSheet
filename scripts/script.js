@@ -7,14 +7,14 @@
 		arrowClick();
 
 	});
-	
+
 	function introAnimations(){
-		$("#introduction, .idea, .content, .arrow, #join").hide();
-		$(".title").hide(0).delay(500).fadeIn(500);
-		$(".subtitle").hide(0).delay(1000).fadeIn(1000);
-		$("#intro-text").hide(0).delay(2000).fadeIn(1000);
-		$(".container").show();
-		$("#introduction, .idea, #join, .arrow").hide(1000).delay(2000).fadeIn("slow");
+		// $("#introduction, .idea, .content, .arrow, #join").hide();
+		// $(".title").hide(0).delay(500).fadeIn(500);
+		// $(".subtitle").hide(0).delay(1000).fadeIn(1000);
+		// $("#intro-text").hide(0).delay(2000).fadeIn(1000);
+		// $(".container").show();
+		// $("#introduction, .idea, #join, .arrow").hide(1000).delay(2000).fadeIn("slow");
 	}
 
 	function arrowClick(){
