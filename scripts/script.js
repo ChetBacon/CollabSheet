@@ -19,8 +19,10 @@
 
 	function arrowClick(){
 	
-		$(".slide").click(function() {
-       	$('html, body').animate({ 	  
+		// on arrow click:
+
+		$(".arrow-image").click(function() {
+       		$('html, body').animate({ 	  
        		scrollTop:$(this).next().offset().top}, 'slow');
 		});
 
@@ -61,5 +63,5 @@
 	        user.save().then(function(object) {
 	  			alert("Succesfully submitted!");
 			});
-	    	}
 	    }
+	}
