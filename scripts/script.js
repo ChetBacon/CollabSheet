@@ -3,19 +3,29 @@
 	// Activate on ready
 	$(function() {
 		$.getScript("//www.parsecdn.com/js/parse-1.6.12.min.js");
-		onStart();
-	});
+		introAnimations();
+		arrowClick();
 
-	function onStart(){
-		// $("#introduction, .idea, .content, .arrow, #join").hide();
-		// $(".title").hide(0).delay(500).fadeIn(500);
-		// $(".subtitle").hide(0).delay(1000).fadeIn(1000);
-		// $("#intro-text").hide(0).delay(2000).fadeIn(1000);
-		// $(".container").show();
-		// $("#introduction, .idea, #join, .arrow").hide(1000).delay(2000).fadeIn("slow");
+	});
+	
+	function introAnimations(){
+		$("#introduction, .idea, .content, .arrow, #join").hide();
+		$(".title").hide(0).delay(500).fadeIn(500);
+		$(".subtitle").hide(0).delay(1000).fadeIn(1000);
+		$("#intro-text").hide(0).delay(2000).fadeIn(1000);
+		$(".container").show();
+		$("#introduction, .idea, #join, .arrow").hide(1000).delay(2000).fadeIn("slow");
 	}
 
-		 function getUserData(){
+	function arrowClick(){
+
+		$(".arrow-image").click(function() {
+       		$('html, body').animate({
+       		scrollTop:$(this).next().offset().top}, 'slow');
+		});
+	}
+
+		function getUserData(){
 
 		 	Parse.initialize("83ESnsf1KPjYEvQOvqS3w9JMTsEa44B2OKxIGZzm", "C2LCT13jgb6hPq2AVk04t5zdPx5Cxb4ablOrkdZD");
 
@@ -52,4 +62,4 @@
 	        user.save().then(function(object) {
 	  			alert("Succesfully submitted!");
 			});
-	    }
+		}
